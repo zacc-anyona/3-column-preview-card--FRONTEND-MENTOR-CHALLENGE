@@ -1,0 +1,158 @@
+:root {
+    --bright-orange:  hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-grey: hsl(0, 0%, 95%);
+}
+
+@font-face {
+    font-family: "Lexend Deca";
+    src: url(./assets/fonts/lexend_deca/LexendDeca-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Big Shoulder Display";
+    src: url(./assets/fonts/big_shoulder_display/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    font-family: "Lexend Deca";
+}
+
+.content {
+    max-width: 20rem;
+    border-radius: 1rem;
+}
+
+.grid-column {
+    padding: 2rem 3rem;
+}
+
+h2 {
+    font-family: "Big Shoulder Display";
+    color: var(--very-light-grey);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+p {
+    color: var(--transparent-white);
+}
+
+.sedan {
+    background: var(--bright-orange);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.suv {
+    background: var(--dark-cyan);
+}
+
+.lux {
+    background: var(--very-dark-cyan);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.car-type {
+    margin-top: 1rem;
+}
+
+.car-info {
+    margin-bottom: 2rem;
+}
+
+.link-text {
+    text-decoration: none;
+    background: var(--very-light-grey);
+    padding: 0.65rem 1.2rem;
+    border-radius: 5rem;
+}
+
+.link-text:hover {
+    border: solid var(--transparent-white) 0.15rem;
+    background: none;
+}
+
+.sedan > .link-text {
+    color: var(--bright-orange);
+}
+
+.suv > .link-text {
+    color: var(--dark-cyan);
+}
+
+.lux > .link-text {
+    color: var(--very-dark-cyan);
+}
+
+.sedan > .link-text:hover {
+    color: var(--transparent-white);
+}
+
+.suv > .link-text:hover {
+    color: var(--transparent-white);
+}
+
+.lux > .link-text:hover {
+    color: var(--transparent-white);
+}
+
+@media screen and (min-width: 43.75em) {
+    .grid-columns {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+
+    .content {
+        max-width: 80rem;
+    }
+
+    .grid-column {
+        padding: 2rem 3rem;
+    }
+
+    .car-icon {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .car-type {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    .car-info {
+        max-width: 12rem;
+        min-height: 8rem;
+        font-size: 1.1rem;
+    }
+
+    .sedan {
+        border-radius: 0.8rem 0 0 0.8rem;
+    }
+
+    .lux {
+        border-radius: 0 0.8rem 0.8rem 0;
+    }
+
+    .link-text {
+        padding: 0.8rem 1.35rem;
+        display: inline-block;
+        margin-top: 7rem;
+    }
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
