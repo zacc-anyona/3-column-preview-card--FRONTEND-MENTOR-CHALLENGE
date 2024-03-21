@@ -104,6 +104,8 @@ p {
     color: var(--transparent-white);
 }
 
+/*-------------------------------------------------------------------DESKTOP DESIGN-------------------------------------------------------------------*/
+
 @media screen and (min-width: 43.75em) {
     .grid-columns {
         display: grid;
@@ -129,7 +131,7 @@ p {
     }
 
     .car-info {
-        max-width: 12rem;
+        max-width: 13rem;
         min-height: 8rem;
         font-size: 1.1rem;
     }
